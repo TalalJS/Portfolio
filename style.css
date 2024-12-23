@@ -73,7 +73,7 @@ nav {
 .profile {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertikale Ausrichtung von Text und Bild */
+  align-items: center; 
   margin: 20% 0;
 }
 
@@ -82,11 +82,11 @@ nav {
   height: 450px;
   border-radius: 50%;
   border: 5px solid #ffc107;
-  object-fit: cover; /* Bild soll in den Container passen, ohne verzerrt zu werden */
+  object-fit: cover; 
   transition: 0.5s;
 }
 .profile img:hover {
-  box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.8); /* Glow-Effekt */
+  box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.8); 
 }
 .section-text h1 {
   font-size: 60px;
@@ -295,16 +295,16 @@ nav {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  aspect-ratio: 1 / 1; /* Macht das Element quadratisch */
-  display: flex; /* Zentriert den Inhalt */
+  aspect-ratio: 1 / 1; 
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
 
 .project img {
   width: 100%;
-  height: 100%; /* Füllt den Container */
-  object-fit: cover; /* Schneidet das Bild passend */
+  height: 100%; 
+  object-fit: cover; 
   border-radius: 15px;
   display: block;
   transition: transform 0.5s;
