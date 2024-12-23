@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16" />
+    <title>Talal</title>
+  </head>
+  <body>
+    <header id="header-1">
+      <div class="container"></div>
+      <nav class="nav-bar">
+        <h1 class="name">Talal.</h1>
+        <ul class="Side-Menu">
+          <li><a href="#header1">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-services">My Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <section class="profile">
+        <div class="section-text">
+          <h1>Hi, I'm <span class="logo">Talal</span></h1>
+          <h2>I'm a <span id="text" class="auto-type"></span></h2>
+          <nav class="social-media">
+            <ul>
+              <li><a href="https://www.instagram.com/talal.ash0/profilecard/?igsh=MWNldWo2enN5YnpwYw==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://github.com/TalalJS" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.threads.net/@talal.ash0?invite=0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i></a></li>
+              <li><a href= https://www.linkedin.com/in/talal-al-shammari-970a6733a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://www.xing.com/profile/Talal_AlShammari018802" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-xing"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+        <img src="pic_1.jpg" alt="Talal profile picture" />
+      </div>
+      </section>
+      </div>
+    </header>
+
+    <!-- About me section -->
+
+    <div id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="about-1">
+            <img src="pic_2.jpg" alt="" />
+          </div>
+          
+          <div class="about-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="txt">
+              Hi, I’m Talal, a passionate developer with expertise in web
+              development, IT administration, and cloud computing. I focus on
+              creating secure, user-friendly applications and optimizing network
+              systems. My goal is to deliver efficient, scalable solutions that
+              help organizations and individuals succeed in a technology-driven
+              world.
+            </p>
+            <div class="tab-titles">
+              <ul class="btn">
+                <li><button class="tab-btn active-btn">Hardskills</button></li>
+                <li><button class="tab-btn">Softskills</button></li>
+              </ul>
+              <div class="tab-content active-tab">
+                <ul>
+                  <li>
+                    <span>Programming:</span
+                    ><br />Building responsive web apps with HTML, CSS, JavaScript,
+                    and React for optimal UX.
+                  </li>
+                  <li>
+                    <span>Technical Tools:</span>
+                    <br />
+                    Proficient with Git, Visual Studio Code, and tools like Jira
+                    for efficient development workflows.
+                  </li>
+                  <li>
+                    <span>Cloud-Computing:</span> <br />Using cloud platforms like AWS, Azure,
+                     and Google Cloud for deployment and scalability.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <ul>
+                  <li>
+                    <span>Communication Skills:</span><br />Expressing ideas
+                    clearly and effectively in both verbal and written forms.
+                  </li>
+                  <li>
+                    <span>Teamwork:</span>
+                    <br />Collaborating effectively with others to achieve
+                    shared goals.
+                  </li>
+                  <li>
+                    <span>Problem-Solving:</span><br />Analyzing challenges and
+                    developing creative, efficient solutions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- service section -->
+
+    <div id="my-services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Specializing in the design and development of user-friendly,
+              responsive websites tailored to business needs, ensuring a
+              seamless online presence.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Networking</h2>
+            <p>
+              Designing and managing secure, reliable networks to optimize
+              communication, enhance data flow, and support scalable business
+              operations.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Cloud</h2>
+            <p>
+              Managing cloud infrastructures to optimize scalability, security,
+              and performance, ensuring efficient data storage and reliable
+              system availability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects section -->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projectes-list">
+          <div class="project">
+            <img src="cloud.png" alt="" />
+            <div class="layout">
+              <h3>Cloud-Server</h3>
+              <p>
+                My Cloud Server project provides a secure, scalable platform for
+                hosting apps and managing data with efficient performance and
+                reliability.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="snake.png" alt="" />
+            <div class="layout">
+              <h3>Snake</h3>
+              <p>
+                My Hangman project is a modern take on the classic word game,
+                offering intuitive controls, engaging design, and educational
+                fun.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="raspberry_pi.png" alt="" />
+            <div class="layout">
+              <h3>PI Hole</h3>
+              <p>
+                My Pi-hole project provides a secure, efficient solution for
+                blocking ads and tracking network-wide, enhancing privacy and
+                improving browsing performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/TalalJS" class="btn-1" target="_blank" rel="noopener noreferrer"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- Contact section -->
+
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="ff571845-556c-4130-b75f-5c00394b5ec4"
+            />
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your Name"
+              class="contact-input"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              class="contact-input"
+              required
+            />
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              rows="6"
+              class="contact-input"
+              required
+            ></textarea>
+            <button type="submit" class="btn-1 btn-2">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Talal. All rights reserved.</p>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
