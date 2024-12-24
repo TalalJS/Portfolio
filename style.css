@@ -8,7 +8,7 @@
 body {
   background-color: #1a1a1a;
   color: #f7f7f7;
-  padding: 0 10%; 
+  padding: 0 10%;
 }
 
 html {
@@ -32,10 +32,8 @@ nav {
 
 .name {
   font-size: 40px;
-  color: #f7f7f7;
   margin-left: 20px;
-  font-family: "Pacifico", cursive;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
 }
 
 .nav-bar ul li {
@@ -73,7 +71,7 @@ nav {
 .profile {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center; /* Vertikale Ausrichtung von Text und Bild */
   margin: 20% 0;
 }
 
@@ -82,11 +80,11 @@ nav {
   height: 450px;
   border-radius: 50%;
   border: 5px solid #ffc107;
-  object-fit: cover; 
+  object-fit: cover; /* Bild soll in den Container passen, ohne verzerrt zu werden */
   transition: 0.5s;
 }
 .profile img:hover {
-  box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.8); 
+  box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.8); /* Glow-Effekt */
 }
 .section-text h1 {
   font-size: 60px;
@@ -101,8 +99,6 @@ nav {
 
 .logo {
   font-size: 60px;
-  font-family: "Pacifico", cursive;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   color: #ffc107;
   font-weight: bold;
 }
@@ -153,6 +149,10 @@ nav {
   50% {
     border-color: transparent;
   }
+}
+.Welcome {
+  font-size: 27px;
+  margin-top: 70px;
 }
 
 /* About me section */
@@ -295,16 +295,16 @@ nav {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  aspect-ratio: 1 / 1; 
-  display: flex; 
+  aspect-ratio: 1 / 1; /* Macht das Element quadratisch */
+  display: flex; /* Zentriert den Inhalt */
   justify-content: center;
   align-items: center;
 }
 
 .project img {
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
+  height: 100%; /* Füllt den Container */
+  object-fit: cover; /* Schneidet das Bild passend */
   border-radius: 15px;
   display: block;
   transition: transform 0.5s;
@@ -478,6 +478,10 @@ form .btn-2 {
   .nav-bar ul li a {
     font-size: 20px;
   }
+  .Welcome {
+    font-size: 23px;
+    margin-top: 50px;
+  }
   .about-1 img {
     width: 350px;
     margin-top: 190px;
@@ -527,16 +531,16 @@ form .btn-2 {
 
 @media screen and (max-width: 1100px) {
   .section-text h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .sub-title {
-    font-size: 40px;
+    font-size: 50px;
   }
   .section-text h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .section-text span {
-    font-size: 40px;
+    font-size: 50px;
   }
   .profile img {
     width: 350px;
@@ -549,13 +553,17 @@ form .btn-2 {
     margin-right: 15px;
   }
   .social-media ul li a {
-    font-size: 25px;
+    font-size: 30px;
   }
   .nav-bar ul li {
     margin: 10px 15px;
   }
   .nav-bar ul li a {
     font-size: 20px;
+  }
+  .Welcome {
+    font-size: 25px;
+    margin-top: 50px;
   }
   .about-1 img {
     width: 300px;
@@ -606,14 +614,16 @@ form .btn-2 {
 
 @media screen and (max-width: 1000px) {
   .section-text h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
-
+  .sub-title {
+    font-size: 45px;
+  }
   .section-text h2 {
-    font-size: 35px;
+    font-size: 45px;
   }
   .section-text span {
-    font-size: 35px;
+    font-size: 45px;
   }
   .profile img {
     width: 300px;
@@ -626,13 +636,17 @@ form .btn-2 {
     margin-right: 15px;
   }
   .social-media ul li a {
-    font-size: 25px;
+    font-size: 30px;
   }
   .nav-bar ul li {
     margin: 10px 15px;
   }
   .nav-bar ul li a {
     font-size: 20px;
+  }
+  .Welcome {
+    font-size: 20px;
+    margin-top: 50px;
   }
 
   .about-2 {
@@ -679,14 +693,24 @@ form .btn-2 {
 }
 
 @media screen and (max-width: 900px) {
+  header {
+    height: 70vh;
+  }
   .section-text h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
   .section-text h2 {
-    font-size: 60px;
+    font-size: 65px;
   }
   .section-text span {
-    font-size: 60px;
+    font-size: 65px;
+  }
+  .sub-title {
+    font-size: 65px;
+  }
+  .Welcome {
+    font-size: 30px;
+    margin-top: 90px;
   }
   .profile img {
     display: none;
@@ -745,16 +769,20 @@ form .btn-2 {
     flex-basis: 100%;
   }
   .about-1 img {
-    width: 605px;
+    width: 615px;
   }
   .txt {
-    font-size: 22px;
+    font-size: 25px;
   }
   .tab-titels {
+    font-size: 30px;
+  }
+  .tab-content ul li {
     font-size: 25px;
-    margin-top: 20px;
   }
   .tab-btn {
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 22px;
     padding: 20px;
     margin-left: 85px;
@@ -762,9 +790,28 @@ form .btn-2 {
   .tab-content ul li span {
     font-size: 30px;
   }
+  .services div {
+    padding: 35px;
+    font-size: 20px;
+  }
+  .services div h2 {
+    font-size: 35px;
+  }
+  .services div i {
+    font-size: 40px;
+  }
+  .layout {
+    font-size: 20px;
+  }
+  .layout h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    height: 65vh;
+  }
   .section-text h1 {
     font-size: 55px;
   }
@@ -785,32 +832,58 @@ form .btn-2 {
     margin-right: 18px;
   }
   .social-media ul li a {
-    font-size: 35px;
+    font-size: 40px;
+  }
+  .Welcome {
+    font-size: 28px;
+    margin-top: 70px;
   }
   .name {
-    font-size: 40px;
+    font-size: 45px;
   }
   .about-1 img {
     width: 585px;
   }
   .txt {
-    font-size: 20px;
+    font-size: 22px;
   }
   .tab-titels {
-    font-size: 25px;
-    margin-top: 18px;
+    font-size: 27px;
   }
+  .tab-content ul li {
+    font-size: 22px;
+  }
+
   .tab-btn {
     font-size: 20px;
-    padding: 20px;
+    padding: 18px;
     margin-left: 77px;
   }
   .tab-content ul li span {
+    font-size: 27px;
+  }
+  .services div {
+    padding: 30px;
+    font-size: 18px;
+  }
+  .services div h2 {
     font-size: 30px;
+  }
+  .services div i {
+    font-size: 40px;
+  }
+  .layout {
+    font-size: 18px;
+  }
+  .layout h3 {
+    font-size: 27px;
   }
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    height: 60vh;
+  }
   .section-text h1 {
     font-size: 50px;
   }
@@ -847,32 +920,45 @@ form .btn-2 {
   }
   .tab-btn {
     font-size: 18px;
-    padding: 15px;
+    padding: 16px;
     margin-left: 67px;
   }
   .tab-content ul li span {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .tab-content ul li {
+    font-size: 20px;
+  }
+  .services div {
+    padding: 30px;
+    font-size: 18px;
   }
   .services div h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .services div i {
-    font-size: 42px;
+    font-size: 40px;
   }
   .layout {
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .layout h3 {
+    font-size: 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 55vh;
+  }
   .section-text h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .section-text h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .section-text span {
-    font-size: 40px;
+    font-size: 45px;
   }
   .social-media ul {
     margin-top: 30px;
@@ -881,11 +967,17 @@ form .btn-2 {
     margin-right: 15px;
   }
   .social-media ul li a {
-    font-size: 25px;
-  }
-
-  .name {
     font-size: 30px;
+  }
+  .sub-title {
+    font-size: 45px;
+  }
+  .Welcome {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .name {
+    font-size: 35px;
   }
   .about-1 img {
     width: 440px;
@@ -897,12 +989,11 @@ form .btn-2 {
     font-size: 18px;
   }
   .tab-titels {
-    font-size: 20px;
-    margin-top: 18px;
+    font-size: 25px;
   }
   .tab-btn {
     font-size: 18px;
-    padding: 15px;
+    padding: 16px;
     margin-left: 45px;
   }
   .tab-content ul li span {
@@ -913,7 +1004,7 @@ form .btn-2 {
   }
   .services div {
     padding: 30px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .services div h2 {
     font-size: 30px;
@@ -922,7 +1013,7 @@ form .btn-2 {
     font-size: 40px;
   }
   .layout {
-    font-size: 14px;
+    font-size: 18px;
   }
   .layout h3 {
     font-size: 25px;
@@ -930,14 +1021,17 @@ form .btn-2 {
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    height: 50vh;
+  }
   .section-text h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
   .section-text h2 {
-    font-size: 35px;
+    font-size: 40px;
   }
   .section-text span {
-    font-size: 35px;
+    font-size: 40px;
   }
   .social-media ul {
     margin-top: 20px;
@@ -946,14 +1040,21 @@ form .btn-2 {
     margin-right: 10px;
   }
   .social-media ul li a {
-    font-size: 22px;
+    font-size: 26px;
   }
   .sub-title {
     font-size: 35px;
   }
+  .Welcome {
+    font-size: 23px;
+    margin-top: 50px;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
 
   .name {
-    font-size: 26px;
+    font-size: 30px;
   }
   .about-1,
   .about-2 {
@@ -965,43 +1066,33 @@ form .btn-2 {
   .about-1 {
     margin-bottom: 20px;
   }
-  .txt {
-    font-size: 16px;
-  }
-  .tab-titels {
-    font-size: 18px;
-    margin-top: 15px;
-  }
   .tab-btn {
     font-size: 16px;
-    padding: 10px;
-    margin-left: 35px;
-  }
-  .tab-content ul li span {
-    font-size: 22px;
-  }
-  .tab-content ul li {
-    font-size: 18px;
-  }
-  .services div {
-    padding: 20px;
-    font-size: 14px;
-  }
-  .services div h2 {
-    font-size: 26px;
-  }
-  .services div i {
-    font-size: 35px;
-  }
-  .layout {
-    font-size: 12px;
-  }
-  .layout h3 {
-    font-size: 22px;
+    padding: 14px;
+    margin-left: 40px;
   }
 }
 
 @media screen and (max-width: 440px) {
+  header {
+    height: 35vh;
+  }
+  .section-text h1 {
+    font-size: 35px;
+  }
+  .section-text h2 {
+    font-size: 35px;
+  }
+  .section-text span {
+    font-size: 35px;
+  }
+  .name {
+    font-size: 28px;
+  }
+  .Welcome {
+    font-size: 20px;
+    margin-top: 40px;
+  }
   .social-media ul {
     margin-top: 15px;
   }
@@ -1009,10 +1100,10 @@ form .btn-2 {
     margin-right: 8px;
   }
   .social-media ul li a {
-    font-size: 20px;
+    font-size: 27px;
   }
   .sub-title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .nav-bar .fas {
     font-size: 26px;
@@ -1030,46 +1121,26 @@ form .btn-2 {
   .about-1 img {
     width: 290px;
   }
-
-  .name {
-    font-size: 22px;
-  }
-  .txt {
-    font-size: 14px;
-  }
-  .tab-titels {
-    font-size: 16px;
-  }
   .tab-btn {
     font-size: 14px;
-    padding: 8px;
-    margin-left: 30px;
+    padding: 12px;
+    margin-left: 22px;
   }
   .tab-content ul li span {
-    font-size: 20px;
-  }
-  .tab-content ul li {
-    font-size: 16px;
-  }
-  .services div {
-    padding: 15px;
-    font-size: 12px;
-  }
-  .services div h2 {
     font-size: 22px;
   }
-  .services div i {
-    font-size: 30px;
+  .tab-content ul li {
+    font-size: 18px;
   }
-  .layout {
-    font-size: 10px;
-  }
-  .layout h3 {
-    font-size: 20px;
+  .txt {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  header {
+    height: 70vh;
+  }
   .section-text h1 {
     font-size: 30px;
   }
