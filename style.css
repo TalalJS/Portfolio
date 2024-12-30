@@ -32,7 +32,6 @@ nav {
 
 .name {
   font-size: 40px;
-  margin-left: 20px;
   font-weight: bold;
 }
 
@@ -295,16 +294,16 @@ nav {
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  aspect-ratio: 1 / 1; /* Macht das Element quadratisch */
-  display: flex; /* Zentriert den Inhalt */
+  aspect-ratio: 1 / 1;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .project img {
   width: 100%;
-  height: 100%; /* Füllt den Container */
-  object-fit: cover; /* Schneidet das Bild passend */
+  height: 100%;
+  object-fit: cover;
   border-radius: 15px;
   display: block;
   transition: transform 0.5s;
@@ -352,8 +351,9 @@ nav {
 }
 .project:hover .layout {
   height: 100%;
-  color: #f7f7f7;
+  color: black;
   cursor: pointer;
+  font-weight: bold;
 }
 .btn-1 {
   display: block;
@@ -1139,7 +1139,7 @@ form .btn-2 {
 
 @media screen and (max-width: 400px) {
   header {
-    height: 70vh;
+    height: 35vh;
   }
   .section-text h1 {
     font-size: 30px;
